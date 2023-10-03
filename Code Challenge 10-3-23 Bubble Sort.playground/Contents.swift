@@ -20,26 +20,3 @@ func bubbleSort(_ array: inout [Int]) {
 var myArray = [5, 7, 2, 9, 3, 1]
 bubbleSort(&myArray)
 print(myArray)
-
-
-//func mBubbleSort(_ array: inout [Int]) {
-//   let size = array.count
-//
-//   for x in 0..<size {
-//      for y in 0..<size-x-1 {
-//
-//         // Compare two adjacent elements
-//         if array[y] > array[y+1] {
-//            // Swap the elements if they are
-//            // not in the correct order
-//            let temp = array[y]
-//            array[y] = array[y+1]
-//            array[y+1] = temp
-//         }
-//      }
-//   }
-//}
-
-//var myArray = [5, 7, 2, 9, 3, 1]
-//mBubbleSort(&myArray)
-//print(myArray)
