@@ -39,3 +39,5 @@ func animalYears(humanYears: Int) -> [Int] {
 animalYears(humanYears: 5)
 
 animalYears(humanYears: 10)
+
+animalYears(humanYears: 3)
