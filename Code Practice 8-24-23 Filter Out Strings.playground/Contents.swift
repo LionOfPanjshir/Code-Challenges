@@ -6,6 +6,10 @@ var filteredOutStrings = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Ste
 
 var array = ["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]
 
-var filteredArray = array.filter { !filteredOutStrings.contains($0) }
+func filterArray(array: [String], filterStringArray: [String]) -> [String] {
+    var filteredArray = array.filter { !filterStringArray.contains($0) }
+    
+    return filteredArray
+}
 
-print(filteredArray)
+print(filterArray(array: array, filterStringArray: filteredOutStrings))
