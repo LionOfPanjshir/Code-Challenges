@@ -26,3 +26,18 @@ func removeExclamation(arg: String) -> String {
 
 print(removeExclamation(arg: "Hi!"))
 print(removeExclamation(arg: "Hi!!"))
+
+func removeWhiteSpaceAndExclamationMark(arg: String) -> String {
+    var newString = arg
+    while newString.last == " " {
+        newString.removeLast()
+    }
+    
+    if newString.last == "!" {
+        newString.removeLast()
+    }
+    
+    return newString
+}
+
+print(removeWhiteSpaceAndExclamationMark(arg: "Hi!!    "))
