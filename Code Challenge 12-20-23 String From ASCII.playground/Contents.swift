@@ -34,3 +34,6 @@ func getAsciiVal(numArray: [Int]) -> [String: Int] {
 var asciiArray = [97, 100, 103, 105, 107, 117]
 
 print(getAsciiVal(numArray: asciiArray))
+
+
+// "aeiou".contains(UnicodeScalar
