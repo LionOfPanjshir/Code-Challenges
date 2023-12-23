@@ -21,7 +21,7 @@ func sumMultiples(n: Int, m: Int) -> Int {
     if n < 0 || m < 0 {
         return 0
     }
-    for index in 1...m {
+    for index in 1..<m {
         if n*index < m {
             numArray.append(n*index)
         }
